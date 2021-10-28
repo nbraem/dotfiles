@@ -1,9 +1,9 @@
 dotfiles
 ========
-Welcome to my castle. Install with [homesick](https://github.com/technicalpickles/homesick):
+Welcome to my castle. Install with [pyhome](https://github.com/acroz/pyhome):
 
-    homesick clone nbraem/dotfiles 
+    pyhome clone https://github.com/nbraem/dotfiles.git
     
-Or install homesick, dotfiles and dotvim with:
+Or install pyhome, dotfiles and dotvim with:
 
     curl -s https://raw.githubusercontent.com/nbraem/dotfiles/master/dotinstall.sh | bash
