@@ -5,14 +5,24 @@
 	ui = true
 [alias]
 	l = log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	c = commit --verbose
+	c = commit --verbose -S
 	s = status -sb
 [core]
 	excludesfile = ~/.gitignore
 [push]
 	default = simple
+    autoSetupRemote = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[user]
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICiSQZE1plZyIQ3gyTH7EGemJkK7xxVloLYtqvd/ogvR
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = "/opt/1Password/op-ssh-sign"
+[commit]
+	gpgsign = true
+
