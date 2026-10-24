@@ -62,6 +62,7 @@ fi
 
 if [ ! "$platform" == 'Darwin' ]; then
 	alias ls='ls --color=auto -G'
+	alias open='xdg-open'
 fi
 #alias dir='dir --color=auto'
 #alias vdir='vdir --color=auto'
